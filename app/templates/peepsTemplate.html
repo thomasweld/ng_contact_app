@@ -1,14 +1,21 @@
-<h2 class="title">All My Peeps</h2>
+
+<div class="row">
+
+  <div class="col-sm-offset-3 col-sm-6">
+
+    <h2>My Peeps</h2>
+
+    <ul>
+      <li>
+        <a href="/#/single/{{ p._id }}" class="box" ng-repeat="p in allPeeps">
+          <h3>
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ p.name }}
+          </h3>
+        </a>
+      </li>
+    </ul>
 
 
-<a href="/#/single/{{ p._id }}" class="box" ng-repeat="p in allPeeps">
-  <article class="media">
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>{{ p.name }}</strong> <small>{{ p.phone }}</small>
-        </p>
-      </div>
-    </div>
-  </article>
-</a>
+  </div>
+
+</div>

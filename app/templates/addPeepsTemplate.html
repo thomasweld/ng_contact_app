@@ -1,19 +1,29 @@
-<h2 class="title">Add Peeps</h2>
 
-<form ng-submit="addPeep(peep)">
+<div class="row">
 
-  <p class="control">
-    <input ng-model="peep.name" type="text" class="input" placeholder="Peep Name">
-  </p>
-  <p class="control">
-    <input ng-model="peep.number" type="text" class="input" placeholder="Peep Number">
-  </p>
+  <div class="col-sm-offset-3 col-sm-6">
 
-  <button class="button">Add Peep to Peeps List</button>
+    <h2>Add Peeps</h2>
 
-</form>
+    <form ng-submit="addPeep(peep)">
 
-<p>
-  {{ peep.name }}
-  {{ peep.number }}
-</p>
+      <p class="control">
+        <input ng-model="peep.name" type="text" class="form-control" placeholder="Name">
+      </p>
+      <p class="control">
+        <input ng-model="peep.email" type="text" class="form-control" placeholder="Email">
+      </p>
+      <p class="control">
+        <input ng-model="peep.number" type="text" class="form-control" placeholder="Phone Number">
+      </p>
+      <p class="control">
+        <input ng-model="peep.addy" type="text" class="form-control" placeholder="City, State">
+      </p>
+
+      <button class="btn btn-default">+ Add Peep to List</button>
+
+    </form>
+
+  </div>
+
+</div>

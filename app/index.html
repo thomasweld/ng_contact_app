@@ -11,11 +11,15 @@
   <body ng-app="myApp">
 
     <nav class="container">
-      <h4>
-        <a href="/#/">Peeps List Home</a>
-         | 
-        <a href="/#/add" class="nav-item">Add Peeps</a>
-      </h4>
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+          <h4>
+            <a href="/#/">Peeps List Home</a>
+            |
+            <a href="/#/add" class="nav-item">+ Add Peeps</a>
+          </h4>
+        </div>
+      </div>
     </nav>
 
     <div class="container" ui-view>
