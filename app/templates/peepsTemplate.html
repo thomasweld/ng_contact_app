@@ -1,0 +1,14 @@
+<h2 class="title">All My Peeps</h2>
+
+
+<a href="/#/single/{{ p._id }}" class="box" ng-repeat="p in allPeeps">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>{{ p.name }}</strong> <small>{{ p.phone }}</small>
+        </p>
+      </div>
+    </div>
+  </article>
+</a>

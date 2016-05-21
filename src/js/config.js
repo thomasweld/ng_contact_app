@@ -1,3 +1,4 @@
+
 function config ($stateProvider, $urlRouterProvider) {
 
   // If not `state` is matched, go to the home page
@@ -5,24 +6,20 @@ function config ($stateProvider, $urlRouterProvider) {
 
   // Define our app states
   $stateProvider
-    .state('root', {
-      abstract: true,
-      templateUrl: 'templates/layout.tpl.html'
-    })
-    .state('root.list', {
+    .state('list', {
       url: '/',
-      templateUrl: 'templates/list.tpl.html',
-      controller: 'ListController as vm'
+      templateUrl: 'templates/peepsTemplate.html',
+      controller: 'PeepsController'
     })
-    .state('root.single', {
-      url: '/single/:itemId',
-      templateUrl: 'templates/single.tpl.html',
-      controller: 'SingleController as vm'
+    .state('single', {
+      url: '/single/:peepId',
+      templateUrl: 'templates/singlePeepTemplate.html',
+      controller: 'SinglePeepController'
     })
-    .state('root.add', {
+    .state('add', {
       url: '/add',
-      templateUrl: 'templates/add.tpl.html',
-      controller: 'AddController as vm'
+      templateUrl: 'templates/addPeepsTemplate.html',
+      controller: 'AddPeepsController'
     })
   ;
 

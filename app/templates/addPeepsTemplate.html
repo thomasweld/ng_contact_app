@@ -1,0 +1,19 @@
+<h2 class="title">Add Peeps</h2>
+
+<form ng-submit="addPeep(peep)">
+
+  <p class="control">
+    <input ng-model="peep.name" type="text" class="input" placeholder="Peep Name">
+  </p>
+  <p class="control">
+    <input ng-model="peep.number" type="text" class="input" placeholder="Peep Number">
+  </p>
+
+  <button class="button">Add Peep to Peeps List</button>
+
+</form>
+
+<p>
+  {{ peep.name }}
+  {{ peep.number }}
+</p>
